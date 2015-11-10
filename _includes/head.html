@@ -1,0 +1,17 @@
+<head>
+  {% include meta.html %}
+
+  {% include favicon.html %}
+  
+  {% include stylesheets/font-awesome.css.html %}
+  {% include stylesheets/bootstrap.css.html %}
+
+  {% if page.mediaelement %}
+    {% include stylesheets/media-element.css.html %}
+  {% endif %}
+        
+  {% for stylesheet in page.stylesheets %}
+    <!-- My Styles -->
+    <link rel="stylesheet" href="/css/{{ stylesheet | prepend: site.baseurl }}">
+  {% endfor %}
+</head>

@@ -1,0 +1,124 @@
+<footer>
+  <div>
+    <div>
+      <div>
+
+        <h5>
+          
+          {{ site.title }}
+
+        </h5>
+        
+        <p>
+          
+          {{ site.tag_line }}
+
+        </p>
+
+
+      </div>
+      <div>
+
+        <h5>
+          
+          Site Map
+
+        </h5>
+
+        <ul>
+
+          {% for page in site.pages %}
+
+            <li>
+              <a href="{{ page.url }}">
+                {{ page.title }}
+              </a>
+            </li>
+
+          {% endfor %}
+
+        </ul>
+      </div>
+
+      <div>
+
+        <h5>
+          
+          Be Social
+
+        </h5>
+
+        <ul>
+        
+          {% if site.facebook_url %}
+            <li>
+              <a href="{{ site.facebook_url }}" target="_blank">
+                <i class="fa fa-2x fa-facebook"></i>
+              </a>
+            </li>
+          {% endif %}
+
+          {% if site.twitter_url %}
+            <li>
+              <a href="{{ site.twitter_url }}" target="_blank">
+                <i class="fa fa-2x fa-twitter"></i>
+              </a>
+            </li>
+          {% endif %}
+
+          {% if site.soundcloud_url %}
+            <li>
+              <a href="{{ site.soundcloud_url }}" target="_blank">
+                <i class="fa fa-2x fa-soundcloud"></i>
+              </a>
+            </li>
+          {% endif %}
+
+          {% if site.youtube_url %}
+            <li>
+              <a href="{{ site.youtube_url }}" target="_blank">
+                <i class="fa fa-2x fa-youtube"></i>
+              </a>
+            </li>
+          {% endif %}
+
+          {% if site.instagram_url %}
+            <li>
+              <a href="{{ site.instagram_url }}" target="_blank">
+                <i class="fa fa-2x fa-instagram"></i>
+              </a>
+            </li>
+          {% endif %}
+
+          {% if site.google_plus_url %}
+            <li>
+              <a href="{{ site.google_plus_url }}" target="_blank">
+                <i class="fa fa-2x fa-google-plus"></i>
+              </a>
+            </li>
+          {% endif %}
+
+          {% if site.github_url %}
+            <li>
+              <a href="{{ site.github_url }}" target="_blank">
+                <i class="fa fa-2x fa-github"></i>
+              </a>
+            </li>
+          {% endif %}
+
+
+        </ul>
+
+      </div>
+
+    </div>
+
+  </div>
+  <div>
+    <div>
+
+      Blogified with <a href="http://jekyllrb.com">Jekyll</a>
+
+    </div>
+  </div>
+</footer>

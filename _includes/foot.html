@@ -1,0 +1,16 @@
+<!-- Footer Includes -->
+{% include javascripts/jquery.js.html %}
+{% include javascripts/bootstrap.js.html %}
+
+{% if page.mediaelement %}
+  {% include javascripts/media-element.js.html %}
+{% endif %}
+
+{% if page.swfobject %}
+  {% include javascripts/swf.js.html %}
+{% endif %}
+
+{% for script in page.javascripts %}
+  <!-- My Scripts -->
+  <script src="/js/{{ script | prepend: site.baseurl }}"></script>
+{% endfor %}

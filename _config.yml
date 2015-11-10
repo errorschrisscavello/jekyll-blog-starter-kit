@@ -1,0 +1,79 @@
+# --------------------------------
+# User Configuration Settings
+# --------------------------------
+# 
+
+# Site
+title: My Site Title
+tag_line: "Something taggy, and snazzy to catch a viewer's eyes..."
+email: my@email.com
+description: > 
+  The site description goes here...
+baseurl: ""
+url: "/"
+author: Your name here
+
+# Social Networks
+twitter_username: '#'
+twitter_url: '#'
+github_username: '#'
+github_url: '#'
+facebook_url: '#'
+soundcloud_url: '#'
+youtube_url: '#'
+instagram_url: '#'
+google_plus_url: '#'
+
+# S3 directories
+images: '/images/'
+swf: '/swf/'
+
+# Defaults
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      author: "Your name here"
+
+
+# --------------------------------
+# Jekyll Configuration Settings
+# --------------------------------
+# 
+
+# Gems
+gems:
+  - jekyll-paginate
+  - jekyll-archives
+
+# Jekyll Paginate
+paginate: 5
+paginate_path: "/blog/page:num/"
+
+# Jekyll Archives
+jekyll-archives:
+  enabled: all
+  layout: 'archive'
+  permalinks:
+    year: '/:year/'
+    month: '/:year/:month/'
+    day: '/:year/:month/:day/'
+    tag: '/tag/:name/'
+    category: '/category/:name/'
+
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+
+
+
+
+
+
+
+
+
+
+
