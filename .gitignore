@@ -1,3 +1,24 @@
+# ----------------------------------------
+# Directories
+# ----------------------------------------
 _site
+
+# ----------------------------------------
+# Files
+# ----------------------------------------
 .sass-cache
 .jekyll-metadata
+
+_config.yml
+
+# ----------------------------------------
+# Favicon
+# ----------------------------------------
+android-chrome-*.png
+apple-touch-icon-*.png
+browserconfig.xml
+favicon-*.png
+favicon.ico
+manifest.json
+mstile-*.png
+safari-pinned-tab.svg
