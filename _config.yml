@@ -38,6 +38,12 @@ defaults:
       path: ""
     values:
       author: "Your name here"
+  - 
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      comments: true
 
 
 # --------------------------------
