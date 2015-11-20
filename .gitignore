@@ -15,7 +15,7 @@ _config.yml
 # Favicon
 # ----------------------------------------
 android-chrome-*.png
-apple-touch-icon-*.png
+apple-touch-icon*.png
 browserconfig.xml
 favicon-*.png
 favicon.ico

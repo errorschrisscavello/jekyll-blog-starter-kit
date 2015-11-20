@@ -24,6 +24,9 @@ youtube_url: '#'
 instagram_url: '#'
 google_plus_url: '#'
 
+# Disqus
+disqus_shortname: jekyllblogkit
+
 # S3 directories
 images: '/images/'
 swf: '/swf/'
