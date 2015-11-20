@@ -1,11 +1,11 @@
 # Changelog
 
-## v0.0.1
+## v0.0.2-alpha c93eed7
 - Set comments enabled on posts by default
 - Add `CHANGELOG.md`
 - Update `_config-example.yml`
 
-## 060422c
+## v0.0.1 060422c
 - Enable disqus comments on posts layout
 - Add `disqus_shortname` to `_config-example.yml`
 - Enable post specific `disqus_identifier`
