@@ -1,5 +1,7 @@
 ---
 layout: default
+layout_stylesheet: archive.css
+layout_javascript: archive.js
 ---
 <header class="page-header">
   <h1 class="page-title">
@@ -15,7 +17,7 @@ layout: default
     {% for post in page.posts %}
       <li>
         <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
-        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        <a class="post-link" href="{{ post.url | prepend: site.base_url }}">{{ post.title }}</a>
       </li>
     {% endfor %}
   </ul>
@@ -30,7 +32,7 @@ layout: default
     {% for post in page.posts %}
       <li>
         <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
-        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        <a class="post-link" href="{{ post.url | prepend: site.base_url }}">{{ post.title }}</a>
       </li>
     {% endfor %}
   </ul>
@@ -45,7 +47,7 @@ layout: default
     {% for post in page.posts %}
       <li>
         <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
-        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        <a class="post-link" href="{{ post.url | prepend: site.base_url }}">{{ post.title }}</a>
       </li>
     {% endfor %}
   </ul>
@@ -60,8 +62,12 @@ layout: default
     {% for post in page.posts %}
       <li>
         <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
-        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        <a class="post-link" href="{{ post.url | prepend: site.base_url }}">{{ post.title }}</a>
       </li>
     {% endfor %}
   </ul>
 {% endif %}
+
+
+
+

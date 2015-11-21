@@ -1,16 +1,26 @@
-<!-- Footer Includes -->
+<!-- jQuery -->
 {% include javascripts/jquery.js.html %}
+
+<!-- Bootstrap JS -->
 {% include javascripts/bootstrap.js.html %}
 
 {% if page.mediaelement %}
+  <!-- Media Element JS -->
   {% include javascripts/media-element.js.html %}
 {% endif %}
 
 {% if page.swfobject %}
+  <!-- SWF Object JS -->
   {% include javascripts/swf.js.html %}
 {% endif %}
 
+<!-- Main JS -->
+<script src="/js/main.js"></script>
+
+<!-- Layout JS -->
+<script src="/js/layouts/{{ page.layout_javascript }}"></script>
+
 {% for script in page.javascripts %}
-  <!-- My Scripts -->
-  <script src="/js/{{ script | prepend: site.baseurl }}"></script>
+  <!-- Page Specific JS -->
+  <script src="/js/{{ script | prepend: site.base_url }}"></script>
 {% endfor %}

@@ -1,17 +1,29 @@
 <head>
+  <!-- Meta -->
   {% include meta.html %}
 
+  <!-- Favicon -->
   {% include favicon.html %}
   
+  <!-- Font Awesome CSS -->
   {% include stylesheets/font-awesome.css.html %}
+
+  <!-- Bootstrap CSS -->
   {% include stylesheets/bootstrap.css.html %}
 
   {% if page.mediaelement %}
+    <!-- Media Element CSS -->
     {% include stylesheets/media-element.css.html %}
   {% endif %}
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="/css/main.css">
+
+  <!-- Layout CSS -->
+  <link rel="stylesheet" href="/css/layouts/{{ page.layout_stylesheet | prepend: site.base_url }}">
         
   {% for stylesheet in page.stylesheets %}
-    <!-- My Styles -->
-    <link rel="stylesheet" href="/css/{{ stylesheet | prepend: site.baseurl }}">
+    <!-- Page Specific CSS -->
+    <link rel="stylesheet" href="/css/{{ stylesheet | prepend: site.base_url }}">
   {% endfor %}
 </head>

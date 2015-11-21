@@ -51,11 +51,13 @@ title: Blog
             <a href="#">Mark???</a>
           </p>
 
+          {% assign image_src = 'http://placehold.it/384x256' %}
           {% if post.image %}
-            <div class="blog-post-image-container">
-              <img src="{{ site.images }}{{ post.image }}" alt="{{ post.title }}" width="128px">
-            </div>
+            {% capture image_src %}{{ site.images }}{{ post.image }}{% endcapture %}
           {% endif %}
+            <div class="blog-post-image-container">
+              <img src="{{ image_src }}" alt="{{ post.title }}" width="128px">
+            </div>
 
           {{ post.content }}
 

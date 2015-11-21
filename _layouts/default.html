@@ -1,15 +1,12 @@
 ---
-stylesheets: main.css
-javascripts: index.js
+
 ---
 <!DOCTYPE html>
 <html>
   {% include head.html %}
   <body>
     {% include nav.html %}
-    <main id="{{ page.permalink }}" class="main container">
-      {{ content }}
-    </main>
+    {{ content }}
     {% include footer.html %}
     {% include foot.html %}
   </body>

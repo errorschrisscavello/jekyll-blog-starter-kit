@@ -3,17 +3,21 @@
 # --------------------------------
 # 
 
+# ----------------------------------------
 # Site
+# ----------------------------------------
 title: My Site Title
 tag_line: "Something taggy, and snazzy to catch a viewer's eyes..."
 email: my@email.com
 description: > 
   The site description goes here...
-baseurl: ""
+base_url: ""
 url: "/"
 author: Your name here
 
+# ----------------------------------------
 # Social Networks
+# ----------------------------------------
 twitter_username: '#'
 twitter_url: '#'
 github_username: '#'
@@ -24,14 +28,22 @@ youtube_url: '#'
 instagram_url: '#'
 google_plus_url: '#'
 
+# ----------------------------------------
 # Disqus
+# ----------------------------------------
 disqus_shortname: jekyllblogkit
 
-# S3 directories
+# ----------------------------------------
+# Asset Directories
+# ----------------------------------------
+audio: '/audio/'
 images: '/images/'
 swf: '/swf/'
+video: '/video/'
 
-# Defaults
+# ----------------------------------------
+# Default Variables
+# ----------------------------------------
 defaults:
   -
     scope:
@@ -45,25 +57,32 @@ defaults:
     values:
       comments: true
 
-
 # --------------------------------
 # Jekyll Configuration Settings
 # --------------------------------
 # 
 
-# 
+# --------------------------------
+# Timezone
+# --------------------------------
 timezone: America/New_York
 
+# --------------------------------
 # Gems
+# --------------------------------
 gems:
   - jekyll-paginate
   - jekyll-archives
 
+# --------------------------------
 # Jekyll Paginate
+# --------------------------------
 paginate: 5
 paginate_path: "/blog/page:num/"
 
+# --------------------------------
 # Jekyll Archives
+# --------------------------------
 jekyll-archives:
   enabled: all
   layout: 'archive'
@@ -74,8 +93,9 @@ jekyll-archives:
     tag: '/tag/:name/'
     category: '/category/:name/'
 
-
+# --------------------------------
 # Build settings
+# --------------------------------
 markdown: kramdown
 permalink: pretty
 

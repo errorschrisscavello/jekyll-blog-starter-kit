@@ -2,6 +2,17 @@
 
 ---
 
+// ----------------------------------------
+// Cover Image
+// ----------------------------------------
+body { 
+  background: url("/images/cover.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 /*
  * Globals
  */
@@ -31,8 +42,8 @@ a:hover {
 html,
 body {
   height: 100%;
-  background-color: #333;
 }
+
 body {
   color: #fff;
   text-align: center;
